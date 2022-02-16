@@ -1,0 +1,16 @@
+<div class="w-100">
+  <img class="my-img" src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/[-77.043686,38.892035,-77.028923,38.904192]/1280x200?access_token=pk.eyJ1Ijoic2VkcmFrYWJsZSIsImEiOiJja3o4cTIzbmcxbjh0MnB0dno5NGwyM2FtIn0.60uclNb1OXKD1Q32L_Y7Ow" alt="map">
+</div>
+
+<div class="container">
+  <div class="bg-light m-2">
+    <h2><%= @flat.name %></h2>
+    <p><%= @flat.address %></p>
+  </div>
+  <div class="bg-light m-2">
+    <h3><%= @flat.name %></h2>
+    <p><%= @flat.address %></p>
+  </div>
+  <%= render 'show_card', big: @flat.name, small: @flat.address %>
+
+</div>
